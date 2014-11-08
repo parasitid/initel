@@ -1,11 +1,12 @@
-(add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/org")
-(add-to-list 'load-path "/home/yann/Tools/org-mode/contrib/lisp" t)
+(add-to-list 'load-path "~/tools/org-mode/contrib/lisp" t)
+(add-to-list 'load-path "~/tools/org-reveal" t)
+;;(add-to-list 'load-path "~/tools/org-jira" t)
 
 (setq jiralib-url "https://jira.numer.gy")
 
 (require 'ox-reveal)
-(require 'org-jira)
+;;(require 'org-jira)
 
 ;;; turn on syntax highlighting
 (global-font-lock-mode 1)
